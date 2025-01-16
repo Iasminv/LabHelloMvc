@@ -1,14 +1,12 @@
-﻿@model List<LabHelloMvc.Models.Person>
+﻿@model LabHelloMvc.Models.Person
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 
-@foreach (var item in Model)
-{
     <p>
-        First Name: @item.FirstName<br />
-        Last Name: @item.LastName<br />
+        First Name: @Model.FirstName<br />
+        Last Name: @Model.LastName<br />
     </p>
-}
+

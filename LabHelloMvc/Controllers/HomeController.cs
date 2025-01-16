@@ -14,17 +14,14 @@ namespace LabHelloMvc.Controllers
 
         public IActionResult Index()
         {
-            // Create a list of people
-            List<Person> persons = new List<Person>();
 
             // Create a person
             Person person = new Person();
             person.FirstName = "Laura";
             person.LastName = "Silva";
 
-            persons.Add(person);
 
-            return View(persons);
+            return View(person);
         }
 
         // Display the details of a person
